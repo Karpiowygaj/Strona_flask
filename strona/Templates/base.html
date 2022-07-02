@@ -13,7 +13,7 @@
             href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
             crossorigin="anonymous"
     />
-    <title>{% block title Title %}Home{% endblock %}</title>
+    <title>{% block title %}Home{% endblock %}</title>
 </head>
 
 <body>
@@ -28,6 +28,9 @@
     <div class="collapse navbar-collapse" id="navbar">
         <div class="navbar-nav">
             <a class="nav-item nav-link" id="login" href="/login">Login</a>
+            <a class="nav-item nav-link" href="/logout" id="logout">Logout</a>
+            <a class="nav-item nav-link" href="/sign-up" id="login">Sign up</a>
+            <a class="nav-item nav-link" href="/" id="login">Home</a>
         </div>
     </div>
 </nav>
