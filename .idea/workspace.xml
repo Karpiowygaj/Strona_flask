@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6c5cfd9c-4e08-4536-ab6b-72be8e38c537" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strona/Templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/strona/Templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strona/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/strona/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +85,7 @@
       <workItem from="1656455614628" duration="3098000" />
       <workItem from="1656537512815" duration="2493000" />
       <workItem from="1656570538237" duration="8199000" />
-      <workItem from="1656800393785" duration="1188000" />
+      <workItem from="1656800393785" duration="3446000" />
     </task>
     <task id="LOCAL-00001" summary="Pierwsza strona">
       <created>1656571522527</created>
@@ -131,7 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656800954833</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Działająca strona">
+      <created>1656801771709</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656801771709</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Działa:&#10;-login, logout, home, Sign-up">
+      <created>1656803633465</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656803633465</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,17 +164,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Pierwsza strona" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pierwsza strona" />
+    <MESSAGE value="Działająca strona" />
+    <MESSAGE value="Działa:&#10;-login, logout, home, Sign-up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Działa:&#10;-login, logout, home, Sign-up" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="32" y="511" key="#Deployment" timestamp="1656803615692">
+      <screen x="0" y="0" width="1080" height="1872" />
+    </state>
+    <state x="32" y="511" key="#Deployment/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656803615692" />
     <state x="0" y="584" width="1080" height="857" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1656458053672">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
     <state x="0" y="584" width="1080" height="857" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656458053672" />
-    <state x="88" y="461" key="CommitChangelistDialog2" timestamp="1656801646349">
+    <state x="34" y="162" width="1005" height="949" key="CommitChangelistDialog2" timestamp="1656803631447">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state x="88" y="461" key="CommitChangelistDialog2/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656801646349" />
+    <state x="34" y="162" width="1005" height="949" key="CommitChangelistDialog2/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656803631447" />
     <state x="92" y="92" width="896" height="1688" key="DiffContextDialog" timestamp="1656570981520">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
@@ -179,22 +199,22 @@
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
     <state x="405" y="574" key="Github.UntrackedFilesDialog/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656570976979" />
-    <state width="1025" height="543" key="GridCell.Tab.0.bottom" timestamp="1656801595839">
+    <state width="1025" height="543" key="GridCell.Tab.0.bottom" timestamp="1656803634973">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state width="1025" height="543" key="GridCell.Tab.0.bottom/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656801595839" />
-    <state width="1025" height="543" key="GridCell.Tab.0.center" timestamp="1656801595839">
+    <state width="1025" height="543" key="GridCell.Tab.0.bottom/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656803634973" />
+    <state width="1025" height="543" key="GridCell.Tab.0.center" timestamp="1656803634973">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state width="1025" height="543" key="GridCell.Tab.0.center/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656801595839" />
-    <state width="1025" height="543" key="GridCell.Tab.0.left" timestamp="1656801595839">
+    <state width="1025" height="543" key="GridCell.Tab.0.center/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656803634973" />
+    <state width="1025" height="543" key="GridCell.Tab.0.left" timestamp="1656803634973">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state width="1025" height="543" key="GridCell.Tab.0.left/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656801595839" />
-    <state width="1025" height="543" key="GridCell.Tab.0.right" timestamp="1656801595839">
+    <state width="1025" height="543" key="GridCell.Tab.0.left/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656803634973" />
+    <state width="1025" height="543" key="GridCell.Tab.0.right" timestamp="1656803634973">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state width="1025" height="543" key="GridCell.Tab.0.right/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656801595839" />
+    <state width="1025" height="543" key="GridCell.Tab.0.right/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656803634973" />
     <state width="1025" height="665" key="GridCell.Tab.1.bottom" timestamp="1656457803857">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
@@ -215,10 +235,10 @@
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
     <state x="0" y="493" key="SettingsEditor/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656457173670" />
-    <state x="32" y="604" key="Vcs.Push.Dialog.v2" timestamp="1656801713372">
+    <state x="32" y="604" key="Vcs.Push.Dialog.v2" timestamp="1656803660479">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state x="32" y="604" key="Vcs.Push.Dialog.v2/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656801713372" />
+    <state x="32" y="604" key="Vcs.Push.Dialog.v2/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656803660479" />
     <state x="92" y="92" width="896" height="1688" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1656570981520">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
@@ -232,8 +252,18 @@
     </state>
     <state x="318" y="833" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656539610132" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Lib/site-packages/flask/scaffold.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/untitled14$main.coverage" NAME="main Coverage Results" MODIFIED="1656458663620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Strona_Flask$main.coverage" NAME="main Coverage Results" MODIFIED="1656801595839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Strona_Flask$main.coverage" NAME="main Coverage Results" MODIFIED="1656803536939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
