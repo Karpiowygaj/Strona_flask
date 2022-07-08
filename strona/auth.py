@@ -27,7 +27,7 @@ def sign_up():
         elif len(firstname) < 2:
             flash('First name must be greater then 2 characters', category='error')
         elif password1 != password2:
-            flash('Passwords must math', category='')
+            flash('Passwords must math', category='error')
         elif len(password1) < 7:
             flash('Password is to weak', category='error')
         else:

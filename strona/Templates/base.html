@@ -34,25 +34,25 @@
         </div>
     </div>
 </nav>
-{% with massages = get_flashed_messages(with_categories=true) %}
-    {% if massages %}
-        {% for category, massage in massages %}
-            {% if category=="erorr" %}
-                <div class="alert alert-danger" role="alert">
-                    {{ massage }}
-                    <button type="button" class="close" data-dismiss="alert">
-                        <span aria-hidden="true">&times</span>
-                    </button>
-                </div>
-            {% else %}
-                <div class="alert alert-sucess" role="sucess">
-                    {{ massage }}
-                    <button type="button" class="close" data-dismiss="alert">
-                        <span aria-hidden="true">&times</span>
-                    </button>
-                </div>
-            {% endif %}
-        {% endfor %}
+{% with massage = get_flashed_messages(category_filter=["error"]) %}
+    {% if massage %}
+        <div class="alert alert-danger" role="alert">
+            {{ massage[-1] }}
+            <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times</span>
+            </button>
+        </div>
+    {% endif %}
+{% endwith %}
+
+{% with massage = get_flashed_messages(category_filter=["success"]) %}
+    {% if massage %}
+        <div class="alert alert-success" role="alert">
+            {{ massage[-1] }}
+            <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times</span>
+            </button>
+        </div>
     {% endif %}
 {% endwith %}
 <div class="container">
