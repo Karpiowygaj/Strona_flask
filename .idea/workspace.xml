@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c5cfd9c-4e08-4536-ab6b-72be8e38c537" name="Default Changelist" comment="">
+    <list default="true" id="6c5cfd9c-4e08-4536-ab6b-72be8e38c537" name="Default Changelist" comment="Działa Sign-up z zapisywaniem do bazy danych">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/strona/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/strona/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/strona/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/strona/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strona/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/strona/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strona/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/strona/database.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,35 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="database" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="database" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="database" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="database" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="user: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="database" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -113,7 +141,8 @@
       <workItem from="1657201088148" duration="19095000" />
       <workItem from="1657269037173" duration="2644000" />
       <workItem from="1657290315307" duration="11270000" />
-      <workItem from="1657368277611" duration="7488000" />
+      <workItem from="1657368277611" duration="9806000" />
+      <workItem from="1657436473518" duration="18107000" />
     </task>
     <task id="LOCAL-00001" summary="Pierwsza strona">
       <created>1656571522527</created>
@@ -220,7 +249,28 @@
       <option name="project" value="LOCAL" />
       <updated>1657312946981</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Działa Sign-up z zapisywaniem do bazy danych">
+      <created>1657379099840</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1657379099840</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Działa Sign-up z zapisywaniem do bazy danych">
+      <created>1657436729316</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1657436729316</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Działa logowanie">
+      <created>1657460585061</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1657460585061</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +296,9 @@
     <MESSAGE value="Dodano metody post w signup i login" />
     <MESSAGE value="Działa strona logowania. Nie działa wyświetlanie komunikatów z błędami" />
     <MESSAGE value="Rozpoczęto tworzenie bazy danych" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rozpoczęto tworzenie bazy danych" />
+    <MESSAGE value="Działa Sign-up z zapisywaniem do bazy danych" />
+    <MESSAGE value="Działa logowanie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Działa logowanie" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -255,22 +307,22 @@
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
     <state x="32" y="511" key="#Deployment/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656803615692" />
-    <state x="0" y="584" width="1080" height="857" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1657378947958">
+    <state x="0" y="584" width="1080" height="857" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1657379521010">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state x="0" y="584" width="1080" height="857" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657378947958" />
+    <state x="0" y="584" width="1080" height="857" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657379521010" />
     <state x="258" y="721" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1657378764196">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
     <state x="258" y="721" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657378764196" />
-    <state x="59" y="376" width="1005" height="949" key="CommitChangelistDialog2" timestamp="1657312944753">
+    <state x="59" y="376" width="1005" height="949" key="CommitChangelistDialog2" timestamp="1657460583030">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state x="59" y="376" width="1005" height="949" key="CommitChangelistDialog2/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657312944753" />
-    <state width="314" height="242" key="DatabaseViewActions_Filter" timestamp="1657378943014">
+    <state x="59" y="376" width="1005" height="949" key="CommitChangelistDialog2/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657460583030" />
+    <state width="314" height="242" key="DatabaseViewActions_Filter" timestamp="1657379483866">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state width="314" height="242" key="DatabaseViewActions_Filter/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657378943014" />
+    <state width="314" height="242" key="DatabaseViewActions_Filter/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657379483866" />
     <state x="92" y="92" width="896" height="1688" key="DiffContextDialog" timestamp="1656570981520">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
@@ -287,58 +339,58 @@
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
     <state x="405" y="574" key="Github.UntrackedFilesDialog/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656570976979" />
-    <state width="1025" height="543" key="GridCell.Tab.0.bottom" timestamp="1657378882059">
+    <state width="1025" height="543" key="GridCell.Tab.0.bottom" timestamp="1657478295656">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state width="1025" height="543" key="GridCell.Tab.0.bottom/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657378882059" />
-    <state width="1025" height="543" key="GridCell.Tab.0.center" timestamp="1657378882059">
+    <state width="1025" height="543" key="GridCell.Tab.0.bottom/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657478295656" />
+    <state width="1025" height="543" key="GridCell.Tab.0.center" timestamp="1657478295656">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state width="1025" height="543" key="GridCell.Tab.0.center/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657378882059" />
-    <state width="1025" height="543" key="GridCell.Tab.0.left" timestamp="1657378882058">
+    <state width="1025" height="543" key="GridCell.Tab.0.center/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657478295656" />
+    <state width="1025" height="543" key="GridCell.Tab.0.left" timestamp="1657478295656">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state width="1025" height="543" key="GridCell.Tab.0.left/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657378882058" />
-    <state width="1025" height="543" key="GridCell.Tab.0.right" timestamp="1657378882059">
+    <state width="1025" height="543" key="GridCell.Tab.0.left/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657478295656" />
+    <state width="1025" height="543" key="GridCell.Tab.0.right" timestamp="1657478295656">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state width="1025" height="543" key="GridCell.Tab.0.right/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657378882059" />
-    <state width="1025" height="665" key="GridCell.Tab.1.bottom" timestamp="1657234231848">
+    <state width="1025" height="543" key="GridCell.Tab.0.right/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657478295656" />
+    <state width="1025" height="665" key="GridCell.Tab.1.bottom" timestamp="1657460534954">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state width="1025" height="665" key="GridCell.Tab.1.bottom/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657234231848" />
-    <state width="1025" height="665" key="GridCell.Tab.1.center" timestamp="1657234231848">
+    <state width="1025" height="665" key="GridCell.Tab.1.bottom/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657460534954" />
+    <state width="1025" height="665" key="GridCell.Tab.1.center" timestamp="1657460534954">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state width="1025" height="665" key="GridCell.Tab.1.center/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657234231848" />
-    <state width="1025" height="665" key="GridCell.Tab.1.left" timestamp="1657234231848">
+    <state width="1025" height="665" key="GridCell.Tab.1.center/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657460534954" />
+    <state width="1025" height="665" key="GridCell.Tab.1.left" timestamp="1657460534954">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state width="1025" height="665" key="GridCell.Tab.1.left/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657234231848" />
-    <state width="1025" height="665" key="GridCell.Tab.1.right" timestamp="1657234231848">
+    <state width="1025" height="665" key="GridCell.Tab.1.left/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657460534954" />
+    <state width="1025" height="665" key="GridCell.Tab.1.right" timestamp="1657460534954">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state width="1025" height="665" key="GridCell.Tab.1.right/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657234231848" />
-    <state width="236" height="549" key="HiddenNamespacesPopup" timestamp="1657378925299">
+    <state width="1025" height="665" key="GridCell.Tab.1.right/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657460534954" />
+    <state width="236" height="549" key="HiddenNamespacesPopup" timestamp="1657379536565">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state width="236" height="549" key="HiddenNamespacesPopup/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657378925299" />
+    <state width="236" height="549" key="HiddenNamespacesPopup/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657379536565" />
     <state x="-1533" y="151" width="1141" height="885" key="SettingsEditor" timestamp="1657312659923">
       <screen x="-1920" y="4" width="1920" height="1032" />
     </state>
     <state x="-1533" y="151" width="1141" height="885" key="SettingsEditor/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657312659923" />
-    <state x="32" y="604" key="Vcs.Push.Dialog.v2" timestamp="1657312958374">
+    <state x="32" y="604" key="Vcs.Push.Dialog.v2" timestamp="1657460593490">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state x="32" y="604" key="Vcs.Push.Dialog.v2/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657312958374" />
+    <state x="32" y="604" key="Vcs.Push.Dialog.v2/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657460593490" />
     <state x="92" y="92" width="896" height="1688" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1656570981520">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
     <state x="92" y="92" width="896" height="1688" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1656570981520" />
-    <state x="171" y="718" key="com.intellij.ide.util.TipDialog" timestamp="1657368310119">
+    <state x="171" y="718" key="com.intellij.ide.util.TipDialog" timestamp="1657436479816">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
-    <state x="171" y="718" key="com.intellij.ide.util.TipDialog/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657368310119" />
+    <state x="171" y="718" key="com.intellij.ide.util.TipDialog/0.0.1080.1872/-1920.4.1920.1032/1080.15.1600.852@0.0.1080.1872" timestamp="1657436479816" />
     <state x="318" y="833" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1657299316208">
       <screen x="0" y="0" width="1080" height="1872" />
     </state>
@@ -360,6 +412,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/untitled14$main.coverage" NAME="main Coverage Results" MODIFIED="1656458663620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Strona_Flask$main.coverage" NAME="main Coverage Results" MODIFIED="1657378882044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Strona_Flask$main.coverage" NAME="main Coverage Results" MODIFIED="1657478295653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
