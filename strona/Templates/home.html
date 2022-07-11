@@ -2,9 +2,11 @@
 {% block title %} Home {% endblock %}
 {% block content %}
     <h1 style="color:dodgerblue" align="center">Notes</h1>
-    {#    <ul class="list-group list-group-flush" id="notes">#}
-    {#        {% for note in user.notes %}#}
-    {#    </ul>#}
+    <ul class="list-group list-group-flush" id="notes">
+        {% for note in user.notes %}
+            <li clas="list-group-item">{{ note.notatka }}</li>
+        {% endfor %}
+    </ul>
     <form method="post">
         <div align="center">
             <textarea style="background-color:lightyellow" name="note" id="note" class="form-control"></textarea>
