@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, flash
+from flask import Blueprint, render_template, request, flash, redirect, url_for
 from flask_login import login_required, current_user
 from .models import Note
 from . import db
@@ -21,3 +21,16 @@ def home():
             flash('Note added!', category='success')
 
     return render_template("home.html", user=current_user)
+
+
+@views.route('/delete/<int:id>', methods=['GET', 'POST'])
+@login_required
+def delete_post(id):
+    post_to_delete = Note.query.get_or_404(id)
+    try:
+        db.session.delete(post_to_delete)
+        db.session.commit()
+        flash("Post successfully deleted", category="error")
+        return redirect(url_for('views.home'))
+    except:
+        flash('Something goes wrong', category="error")
