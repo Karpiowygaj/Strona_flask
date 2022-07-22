@@ -8,11 +8,12 @@ class Note(db.Model):
     notatka = db.Column(db.String(10000))
     data = db.Column(db.DateTime(timezone=True), default=func.now())
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    Note_count = 0
 
     def __str__(self):
         self.notka = self.notatka[0:10]
         self.printable_date = self.data
-        return f'{self.id},{self.notka}...,{self.printable_date.strftime("%Y-%m-%d, %H:%M:%S")}'
+        return f'{self.Note_count},{self.notka}...,{self.printable_date.strftime("%Y-%m-%d, %H:%M:%S")}'
 
 
 class User(db.Model, UserMixin):

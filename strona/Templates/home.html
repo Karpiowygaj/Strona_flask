@@ -3,7 +3,9 @@
 {% block content %}
     <h1 style="color:dodgerblue" align="center">Notes</h1>
     <ul class="list-group list-group-flush" id="notes">
-        {% for note in user.notes %}
+        <h2 style="color: #28a745"> Liczba notatek: {{ rows }}</h2>
+        {% for note in  user.notes %}
+
             <div>
                 {#            <a class="list-group-item">#}
                 {{ note }}

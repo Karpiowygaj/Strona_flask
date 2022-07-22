@@ -10,6 +10,7 @@ views = Blueprint('views', __name__)
 @login_required
 def home():
     note = request.form.get('note')
+    rows = db.session.query(Note).count()
     if request.method == 'POST':
 
         if len(note) < 1:
@@ -20,7 +21,7 @@ def home():
             db.session.commit()
             flash('Note added!', category='success')
 
-    return render_template("home.html", user=current_user)
+    return render_template("home.html", user=current_user, rows=rows)
 
 
 @views.route('/delete/<int:id>', methods=['GET', 'POST'])
