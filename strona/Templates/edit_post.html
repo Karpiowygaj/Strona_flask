@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 {% block title %} Login {% endblock %}
 {% block content %}
-
+    <form method="post">
+        <div align="center">
+            <textarea style="background-color:lightyellow" name="note" id="note"
+                      class="form-control">{{ post_to_edit.notatka }}</textarea>
+            <button type="submit" class="btn btn-info">Edit note</button>
+        </div>
+    </form>
 {% endblock %}

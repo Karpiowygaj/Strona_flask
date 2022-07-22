@@ -4,17 +4,22 @@
     <h1 style="color:dodgerblue" align="center">Notes</h1>
     <ul class="list-group list-group-flush" id="notes">
         {% for note in user.notes %}
-            <li clas="list-group-item">{{ note }}
-                <a href="{{ url_for('views.delete_post', id = note.id) }}"
-                <button type="button" class="btn btn-danger">Delete</button>
+            <div>
+                {#            <a class="list-group-item">#}
+                {{ note }}
+                <a href="{{ url_for('views.delete_post', id = note.id) }}">
+                    <button type="button" class="btn btn-danger">Delete</button>
                 </a>
-            </li>
+                <a href="{{ url_for('views.edit_post', id = note.id) }}">
+                    <button type="button" class="btn btn-info">Edit</button>
+                </a>
+            </div>
         {% endfor %}
-    </ul>
-    <form method="post">
-        <div align="center">
-            <textarea style="background-color:lightyellow" name="note" id="note" class="form-control"></textarea>
-            <button type="submit" class="btn btn-primary">Add Note</button>
-        </div>
-    </form>
+
+        <form method="post">
+            <div align="center">
+                <textarea style="background-color:lightyellow" name="note" id="note" class="form-control"></textarea>
+                <button type="submit" class="btn btn-primary">Add Note</button>
+            </div>
+        </form>
 {% endblock %}

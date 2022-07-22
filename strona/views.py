@@ -3,7 +3,7 @@ from flask_login import login_required, current_user
 from .models import Note
 from . import db
 
-views = Blueprint('views',__name__)
+views = Blueprint('views', __name__)
 
 
 @views.route('/', methods=['GET', 'POST'])
@@ -34,3 +34,20 @@ def delete_post(id):
         return redirect(url_for('views.home'))
     except:
         flash('Something goes wrong', category="error")
+
+
+@views.route('/edit_post/<int:id>', methods=['GET', 'POST'])
+@login_required
+def edit_post(id):
+    post_to_edit = Note.query.get_or_404(id)
+
+    if request.method == 'POST':
+        note = request.form.get('note')
+        post_to_edit.notatka = note
+        db.session.commit()
+        flash('Note edited!', category='success')
+        return redirect(url_for('views.home'))
+    else:
+        pass
+
+    return render_template("edit_post.html", user=current_user, post_to_edit=post_to_edit)
