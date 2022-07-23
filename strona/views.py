@@ -10,16 +10,21 @@ views = Blueprint('views', __name__)
 @login_required
 def home():
     note = request.form.get('note')
-    rows = db.session.query(Note).count()
+    user = str(current_user)
+    user = user.replace(">", "")
+    user = user.split()
+    rows = db.session.query(Note).filter(Note.user_id == user[1]).count()
     if request.method == 'POST':
 
         if len(note) < 1:
             flash('Note is too short', category='error')
+
         else:
             new_note = Note(notatka=note, user_id=current_user.id)
             db.session.add(new_note)
             db.session.commit()
             flash('Note added!', category='success')
+            return redirect(url_for("views.home"))
 
     return render_template("home.html", user=current_user, rows=rows)
 
